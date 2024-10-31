@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House of Wisdom - User Module</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1><b>House of Wisdom</b></h1><br>
+		<marquee behavior="scroll" direction="left" scrollamount="20" ><i><b>Your Journey of Learning and Discovery Starts Here</b></i></marquee><br><br>
+        <nav>
+            <ul>
+                <li><a href="#renew-book"><b>Renew Book</b></a></li>
+                <li><a href="#return-books"><b>Books to Return</b></a></li>
+                <li><a href="#events"><b>Upcoming Events</b></a></li>
+                <li><a href="#reserve-books"><b>Reserve Books</b></a></li>
+                <li><a href="#membership"><b>Membership</b></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Renew Book Section -->
+    <section id="renew-book">
+        <h2>Renew Your Books</h2>
+        <label for="book-id">Book ID:</label>
+        <input type="text" id="book-id" placeholder="Enter Book ID">
+		<label for="book-title">Book Title:</label>
+        <input type="text" id="book-title" placeholder="Enter Book title">
+		 <label for="membership-id">Membership-ID:</label>
+        <input type="text" id="membership-id" placeholder="Enter Membership ID">
+        <button id="renew-btn">Renew</button>
+        <p id="renew-result"></p>
+    </section>
+
+    <!-- Books to be Returned -->
+    <section id="return-books">
+        <h2>Books to be Returned</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Book ID</th>
+                    <th>Title</th>
+                    <th>Return By</th>
+                </tr>
+            </thead>
+            <tbody id="return-list">
+                <!-- List of books due for return -->
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Upcoming Events -->
+    <section id="events">
+        <h2>Upcoming Events</h2>
+        <ul id="event-list">
+            <!-- List of upcoming events -->
+        </ul>
+    </section>
+
+    <!-- Reserve Books -->
+    <section id="reserve-books">
+        <h2>Reserve Books</h2>
+        <label for="reserve-book-id">Book ID:</label>
+        <input type="text" id="reserve-book-id" placeholder="Enter Book ID to Reserve">
+		<label for="book-title">Book Title:</label>
+        <input type="text" id="book-title" placeholder="Enter Book title">
+		<label for="author-name">Author Name:</label>
+        <input type="text" id="author-name" placeholder="Enter Name of Author">
+        <button id="reserve-btn">Reserve</button>
+        <p id="reserve-result"></p>
+    </section>
+
+    <!-- Membership Section -->
+    <section id="membership">
+        <h2>Membership</h2>
+		<label for="membership-id">Membership-ID:</label>
+        <input type="text" id="membership-id" placeholder="Enter Membership ID">
+		<label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name"><br>
+		<label for="name">Email:</label><br>
+        <input type="email" id="email" placeholder="Enter your email"><br><br>
+		<label for="name">Phone no:</label><br>
+        <input type="text" id="phno" placeholder="Enter your phone number">
+        <label for="membership-select">Choose New Membership:</label>
+        <select id="membership-select">
+            <option value="silver">Silver     -  250/-</option>
+            <option value="golden">Golden     -  500/-</option>
+            <option value="diamond">Diamond   -  750/-</option>
+        </select>
+		<label for="name">Upload Screenshot:</label>
+        <input type="file" id="ss" placeholder="Upload payment screenshot" required><br><br>
+        <button id="membership-btn">Renew Membership</button>
+        <p id="membership-result"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
